@@ -19,7 +19,7 @@ INSTALL_WRKSRC=	${WRKSRC}/mDNSPosix
 MAKE_ARGS=	os=freebsd LOCALBASE=${PREFIX} MANPATH=${MANPREFIX}/man
 USES=		bison gmake
 USE_LDCONFIG=	yes
-USE_RC_SUBR=	mdnsd
+USE_RC_SUBR=	mdnsd mdnsresponder
 
 EXTRA_BIN=	bin/mDNSClientPosix bin/mDNSIdentify bin/mDNSNetMonitor \
 		bin/mDNSProxyResponderPosix bin/mDNSResponderPosix
